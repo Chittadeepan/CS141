@@ -3,7 +3,7 @@ using namespace std;
 //Sum of even and odd
 //Write a function that outputs the sum of all even numbers between firstNum and secondNum. (use loop);create a user-defined function called sumEvenNumbers(). Use call-by-value 
 int sumEvenNumbers(int a,int b){
- int k;
+ int k=0;
 if(a%2==1){
 for(int i=a+1;i<b;i=i+2){
  k +=i;
@@ -67,23 +67,29 @@ return e;
 }
 
 //Write a main program. 
-int main(){
+int  main(){
 int a=0;int b=0;
-//Declare a variable called sumEven in the main() for the sumEvenNumbers(). sumEvenNumbers() is a value returning function. Use sumEven to hold a returned value.
 
-// Declare a variable called sumOdd in the main() for the sumOddNumbers(). sumOddNumbers() is a value returning function. Use sumOdd to hold a returned value.
-
-//Declare a variable called sumSquareEven in the main(), for the sumSqureEvenNumbers(). sumSqureEvenNumbers() is a value returning function. Use sumSquareEven to hold a returned value.
-
-//Declare a variable called sumSquareOdd in the main(), for the sumSqureOddNumbers(). sumSqureOddNumbers() is a value returning function. Use sumSquareOdd to hold a returned value.
-
-//Then display the values
 cout<<"give 2 numbers: "<<endl;
-cin>>a>>b;
-cout<<"sum of even numbers: "<<sumEvenNumbers(a,b)<<endl;
-cout<<"sum of odd numbers: "<<sumOddNumbers(a,b)<<endl;
-cout<<"sum of square of even numbers: "<<sumSquareEvenNumbers(a,b)<<endl;
-cout<<"sum of square of odd numbers: "<<sumSquareOddNumbers(a,b)<<endl;
+cin>>a>>b;//Declare a variable called sumEven in the main() for the sumEvenNumbers(). sumEvenNumbers() is a value returning function. Use sumEven to hold a returned value.
+int sumEven;
+sumEven=sumEvenNumbers(a,b);
+// Declare a variable called sumOdd in the main() for the sumOddNumbers(). sumOddNumbers() is a value returning function. Use sumOdd to hold a returned value.
+int sumOdd;
+sumOdd=sumOddNumbers(a,b);
+//Declare a variable called sumSquareEven in the main(), for the sumSqureEvenNumbers(). sumSqureEvenNumbers() is a value returning function. Use sumSquareEven to hold a returned value.
+int sumSquareEven;
+sumSquareEven=sumSquareEvenNumbers(a,b);
+//Declare a variable called sumSquareOdd in the main(), for the sumSqureOddNumbers(). sumSqureOddNumbers() is a value returning function. Use sumSquareOdd to hold a returned value.
+int sumSquareOdd;
+sumSquareOdd=sumSquareOddNumbers(a,b);
+//Then display the values
+
+
+cout<<"sum of even numbers: "<<sumEven<<endl;
+cout<<"sum of odd numbers: "<<sumOdd<<endl;
+cout<<"sum of square of even numbers: "<<sumSquareEven<<endl;
+cout<<"sum of square of odd numbers: "<<sumSquareOdd<<endl;
 return 0;
 }
 
