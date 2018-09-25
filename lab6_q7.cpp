@@ -1,7 +1,5 @@
 #include<iostream>
 using namespace std;
-#include<iostream>
-using namespace std;
 //UpperCase and LowerCase
 //Write a user-defined function to Upper() that returns the uppercase of the inputChar received. Use call-by-value.
 char Upper(char a){
