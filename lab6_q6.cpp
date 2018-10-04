@@ -71,7 +71,8 @@ int  main(){
 int a=0;int b=0;
 
 cout<<"give 2 numbers: "<<endl;
-cin>>a>>b;//Declare a variable called sumEven in the main() for the sumEvenNumbers(). sumEvenNumbers() is a value returning function. Use sumEven to hold a returned value.
+cin>>a>>b;
+//Declare a variable called sumEven in the main() for the sumEvenNumbers(). sumEvenNumbers() is a value returning function. Use sumEven to hold a returned value.
 int sumEven;
 sumEven=sumEvenNumbers(a,b);
 // Declare a variable called sumOdd in the main() for the sumOddNumbers(). sumOddNumbers() is a value returning function. Use sumOdd to hold a returned value.
