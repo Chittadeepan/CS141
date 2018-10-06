@@ -6,14 +6,15 @@ int hcf(int a, int b){
        return hcf(b, a % b);
          }
     else{ 
-       return a;
+       
+         return a;
         }
 }
 //write main prgm
 int main(){
    int a,b;int hcf(int a, int b);
 //ask the user to give 2 numbers
-   cout << "Give 2 numbers. ";
+   cout << "Give 2 numbers."<<endl;
    cin >> a >> b;
 //display the result
    cout << "H.C.F of the given numbers is " << hcf(a,b)<<endl;
