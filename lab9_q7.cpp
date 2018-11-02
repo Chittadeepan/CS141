@@ -7,7 +7,7 @@ void* max(double* i, int size){
 	}
   else {
     double *temporaryMax;// pointer points to the running max
-    double *p;    // work pointer to traverse the array pointed by a
+    double *p;    // work pointer to traverse the array pointed by p
 
     temporaryMax = i; // running max set to the first (0th) element
     p = i+1;   // work pointer starts from the next (1th) element
