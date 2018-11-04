@@ -4,16 +4,18 @@ using namespace std;
 
 //Strcpy
 
-void strcpy(int a=0,int b=0,int c=0,int d=0){
-	char arr[6]={'D','e','e','p','a','n'};char array[12]={'C','h','a','k','r','a','b','a','r','t','t','y'};char ar[7];char arra[13];
-	while(a!=6){
+void strcpy(int a=0,int b=0,int c=0,int d=0,char arr[6],char arrays[12],char  arra[13], char ar[7]){
+	while(a!=6)
+        {
 		ar[c]=arr[a];
 		cout<<ar[c];
-		a++;c++;
+		a++;
+        c++;
 		}
 	ar[6]='\0';
-	while(b!=12){
-		arra[d]=array[b];
+	while(b!=12)
+        {
+		arra[d]=arrays[b];
 		cout<<arra[d];
 		b++;d++;
 		}
@@ -22,8 +24,8 @@ void strcpy(int a=0,int b=0,int c=0,int d=0){
 }
 //Strcat
 
-void strcat(int a=0,int b=0,int c=0){
-	char arr[6]={'D','e','e','p','a','n'};char array[12]={'C','h','a','k','r','a','b','a','r','t','t','y'};char ar[19];
+void strcat(int a=0,int b=0,int c=0,char arr[6], char ar[7],char arrays[12]){
+
 	while(a!=6){
 		ar[c]=arr[a];
 		cout<<ar[c];
@@ -31,7 +33,7 @@ void strcat(int a=0,int b=0,int c=0){
 		}
 
 	while(b!=12){
-		ar[c]=array[b];
+		ar[c]=arrays[b];
 		cout<<ar[c];
 		b++;c++;
 		}
@@ -40,8 +42,8 @@ void strcat(int a=0,int b=0,int c=0){
 }
 //Strlen
 
-void strlen(int a,int b){
-	char arr[6]={'D','e','e','p','a','n'};char ar[7];
+void strlen(int a,int b,char arr[6], char ar[7]){
+
 	while(a!=6){
 		ar[b]=arr[a];
 		a++;b++;
@@ -51,22 +53,22 @@ void strlen(int a,int b){
 }
 //Strcmp
 
-void strcmp(){
-	char str[3]={'c','a','t'}; char arr[3]={'d','o','g'};
+void strcmp(char arr[6], char str[13]){
+
 	if((str[3])!=(arr[3])){
 		cout<<"both the strings are different."<<endl;
 		}
 	else{
 		cout<<"both the strings are same."<<endl;
-	}	
+	}
 	cout<<" "<<endl;
 }
 //Strchr
 
-void strchr(char a,int i=0){
-	char arr[6]={'D','e','e','p','a','n'};a=arr[i];
+void strchr(char e,int i=0, char arr[6]){
+
 	while(i<6){
-		if(a==arr[3]){
+		if(e==arr[i]){
 			cout<<"The position of 'p'in Deepan : "<<i+1<<endl;
 			}
 		i++;
@@ -75,35 +77,40 @@ void strchr(char a,int i=0){
 }
 //Strstr
 
-void strstr(int a=0){
-    char arr[6]={'D','e','e','p','a','n'};char array[12]={'C','h','a','k','r','a','b','a','r','t','t','y'};char str[5]={'N','I','S','E','R'};
+void strstr(int a=0,char arr[6],char arrays[12],char str1[5] ){
+
 	while(a<11){
 		if(a==6){
-			cout<<arr<<str<<endl;
+			cout<<arr<<str1<<endl;
 			}
 		a++;
-	}			
+	}
 	cout<<" "<<endl;
 }
 int main(){
-	int a=0;int b=0;int c=0;int d=0;
-    cout<<"the given string is 'DeepanChakrabartty'."<<endl; 
+	int a=0;int b=0;int c=0;int d=0; int i=0;char e='p';
+	char arr[6]={'D','e','e','p','a','n'};
+	char arrays[12]={'C','h','a','k','r','a','b','a','r','t','t','y'};
+	char ar[7];
+	char arra[13];
+	char str[13]={'c','a','t'};
+    char str1[5]={'N','I','S','E','R'};
+    cout<<"the given string is 'DeepanChakrabartty'."<<endl;
 	cout<<"the strcpy of the given string :"<<endl;
-	strcpy(a,b,c,d);
+	strcpy(a,b,c,d ,arr,arrays,ar,arra);
 	cout<<"the strings are 'Deepan' and 'Chakrabartty'."<<endl;
 	cout<<"the strcat of the given strings :"<<endl;
-	strcat(a,b,c);
+	strcat(a,b,c, arr, ar, arrays);
 	cout<<"the given string is 'Deepan'. "<<endl;
 	cout<<"the strlen of the given string :"<<endl;
-	strlen(a,b);
+	strlen(a,b, arr, ar);
 	cout<<"the strings are 'cat' and 'dog'."<<endl;
 	cout<<"they can be compared as: "<<endl;
-	strcmp();
+	strcmp(arr,str);
 	cout<<"the given string is 'Deepan'. "<<endl;
-	strchr(a,b);
+	strchr(e,i,arr);
 	cout<<"the given string is 'DeepanChakrabartty' and the replaced string of 'Chakrabartty' is 'NISER'."<<endl;
 	cout<<"the strstr of the given string :"<<endl;
-	strstr(a);
+	strstr(a,arr,arrays,str1);
 	return 0;
 }
-
