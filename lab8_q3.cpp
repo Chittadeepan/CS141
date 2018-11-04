@@ -1,10 +1,9 @@
 #include<iostream>
 using namespace std;
 //Write a function for kth largest element of an array
-int klarge(int k){
+int klarge(int k,int arr[4]){
     int klarge;
-    int arr[4]={8,6,3,9};
-	if(k==1){
+    if(k==1){
     klarge=arr[3];
     }
     else if(k==2){
@@ -19,9 +18,8 @@ int klarge(int k){
     return klarge;
 }
 //Write a function for kth smallest element of an array
-int ksmall(int k){
+int ksmall(int k,int arr[4]){
     int ksmall;
-    int arr[4]={8,6,3,9};
 	if(k==1){
     ksmall=arr[2];
     }
@@ -38,15 +36,15 @@ int ksmall(int k){
 }
 //write the main prgm
 int main(){
-	int k;
+	int k;int arr[4]={8,6,3,9};
 //print the given numbers
-    cout<<"The given numbers are 8,6,3,9"<<endl;
+    cout<<"The given numbers are 8,6,3,9 ."<<endl;
 //ask the user to give k
     cout<<"Give the degree of largest and smallest element from given 4 numbers between 1 to 4"<<endl;
     cin>>k;
 //display the result
-    cout<<"The "<<k<<"th largest element="<<klarge(k)<<endl;
-    cout<<"The "<<k<<"th smallest element="<<ksmall(k)<<endl;
+    cout<<"The "<<k<<"th largest element="<<klarge(k,arr)<<endl;
+    cout<<"The "<<k<<"th smallest element="<<ksmall(k,arr)<<endl;
     return 0;
 }
 

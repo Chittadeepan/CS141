@@ -1,10 +1,8 @@
 #include<iostream>
 using namespace std;
 //Write a function to merge 2 arrays (just one after another into another array), find maximum of 2 arrays [maximum element of all the elements in both the arrays], 
-int max(){
+int max(int arr[2],int array[2]){
 	int a;int b;int c;int d;int max;
-    int arr[2]={2,4};
-	int array[2]={3,8};
     int ar[4];
     for(int i=0;i<2;i++){
        ar[i]=arr[i];
@@ -29,10 +27,8 @@ int max(){
 	return max;
 }
 //Write a function to merge 2 arrays (just one after another into another array),find minimum of 2 arrays .
-int min(){
+int min(int arr[2],int array[2]){
 	int a;int b;int c;int d;int min;
-	int arr[2]={2,4};
-	int array[2]={3,8};
     int ar[4];
     for(int i=0;i<2;i++){
        ar[i]=arr[i];
@@ -61,22 +57,13 @@ int main(){
 	int a;int b;int c;int d;
 	int arr[2]={2,4};
 	int array[2]={3,8};
-	int ar[4];
-	for(int i=0;i<2;i++){
-       ar[i]=arr[i];
-    }
-	for(int i=2;i<4;i++){
-       ar[i]=array[i-2];
-    }
-
-    a=ar[0];b=ar[1];c=ar[2];d=ar[3];
-	 
+	
 //print the new set of numbers by merging arrays
-    cout<<"The given numbers are "<<a<<","<<b<<","<<c<<","<<d<<endl;
+    cout<<"The given numbers are 2,4,3,8 ."<<endl;
     
 //display the result
-    cout<<"The maximum of given numbers="<<max()<<endl;
-    cout<<"The minimum of given numbers="<<min()<<endl;
+    cout<<"The maximum of given numbers="<<max(arr,array)<<endl;
+    cout<<"The minimum of given numbers="<<min(arr,array)<<endl;
 	return 0;
 }
 
