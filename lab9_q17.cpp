@@ -94,8 +94,8 @@ int main(){
 	char ar[7];
 	char arra[13];
 	char str[13]={'c','a','t'};
-    char str1[5]={'N','I','S','E','R'};
-    cout<<"the given string is 'DeepanChakrabartty'."<<endl;
+        char str1[5]={'N','I','S','E','R'};
+        cout<<"the given string is 'DeepanChakrabartty'."<<endl;
 	cout<<"the strcpy of the given string :"<<endl;
 	strcpy(a,b,c,d ,arr,arrays,ar,arra);
 	cout<<"the strings are 'Deepan' and 'Chakrabartty'."<<endl;
