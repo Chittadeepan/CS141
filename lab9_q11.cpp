@@ -10,14 +10,14 @@ int main(){
     cout<<"The size of a = "<<sizeof a<<endl;
 	cout<<"The size of b = "<<sizeof b<<endl;
 	cout<<"The size of c = "<<sizeof c<<endl;
-	cout<<"The size of d= "<<sizeof d<<endl;
-	cout<<"The size of e = " <<sizeof e<<endl;
-	cout<<"The size of f = " <<sizeof f<<endl;
-	cout<<"The size of *p1 =" <<sizeof *p1<<endl;
-	cout<<"The size of *p2 =" <<sizeof *p2<<endl;
-	cout<<"The size of *p3 =" <<sizeof *p3<<endl;
-	cout<<"The size of *p4 =" <<sizeof *p4<<endl;
-	cout<<"The size of *p5 =" <<sizeof *p5<<endl;
-	cout<<"The size of *p6 =" <<sizeof *p6<<endl;
+	cout<<"The size of d = "<<sizeof d<<endl;
+	cout<<"The size of e = "<<sizeof e<<endl;
+	cout<<"The size of f = "<<sizeof f<<endl;
+	cout<<"The size of p1 ="<<sizeof p1<<endl;
+	cout<<"The size of p2 ="<<sizeof p2<<endl;
+	cout<<"The size of p3 ="<<sizeof p3<<endl;
+	cout<<"The size of p4 ="<<sizeof p4<<endl;
+	cout<<"The size of p5 ="<<sizeof p5<<endl;
+	cout<<"The size of p6 ="<<sizeof p6<<endl;
 	return 0;
 }
