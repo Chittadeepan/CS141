@@ -55,7 +55,7 @@ void strlen(int a,int b,char arr[6], char ar[7]){
 
 void strcmp(char arr[6], char str[13]){
 
-	if((str[3])!=(arr[3])){
+	if((str[13])!=(arr[6])){
 		cout<<"both the strings are different."<<endl;
 		}
 	else{
@@ -104,7 +104,7 @@ int main(){
 	cout<<"the given string is 'Deepan'. "<<endl;
 	cout<<"the strlen of the given string :"<<endl;
 	strlen(a,b, arr, ar);
-	cout<<"the strings are 'cat' and 'dog'."<<endl;
+	cout<<"the strings are 'cat' and 'Deepan'."<<endl;
 	cout<<"they can be compared as: "<<endl;
 	strcmp(arr,str);
 	cout<<"the given string is 'Deepan'. "<<endl;
